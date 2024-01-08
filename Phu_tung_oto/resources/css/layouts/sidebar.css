@@ -1,0 +1,91 @@
+nav li {
+    list-style-type: none;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+}
+
+.producer__name {
+    font-size: 20px;
+    color: var(--main-color);
+}
+
+.brand__tool {
+    color: var(--main-color);
+    padding: 0.3rem;
+    transition: transform 0.3s ease;
+}
+
+.brand__tool.flip {
+    transform: rotate(180deg) !important;
+    transition: transform 0.3s ease !important;
+}
+
+.nav__vertical {
+    background-color: var(--semi-color);
+    padding: 0.2rem;
+    min-height: 100vh;
+    width: 15rem;
+    overflow-y: auto;
+    transition: width .2s ease;
+}
+
+.nav__vertical_collapsed {
+    width: 5rem;
+    transition: width 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vertical__menu {
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--main-color);
+}
+
+.vertical__menu .active {
+    background-color: var(--box-color);
+    justify-content: center;
+}
+
+.vertical__menu:hover {
+    background-color: var(--box-color);
+}
+
+.menu__item {
+    display: inline;
+}
+
+.menu__dropdown a {
+    padding-left: 2.2rem;
+    display: block;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity .5s ease, max-height 0.5s ease;
+    color: var(--main-color);
+    max-height: 0;
+}
+
+.menu__dropdown a:hover {
+    background-color: var(--box-color);
+}
+
+.active {
+    opacity: 1 !important;
+    max-height: 50px !important;
+}
+
+.__icon {
+    transition: transform 0.3s ease;
+}
+
+.__icon.rotated {
+    transform: rotate(90deg) !important;
+    transition: transform 0.3s ease !important;
+}
